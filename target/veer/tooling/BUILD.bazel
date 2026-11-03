@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_library", "rust_test")
-load(":caliptra_runner.bzl", "caliptra_boot_artifact")
+load(":caliptra_test.bzl", "caliptra_boot_artifact")
 
 exports_files(
     ["on_device_test.rs"],

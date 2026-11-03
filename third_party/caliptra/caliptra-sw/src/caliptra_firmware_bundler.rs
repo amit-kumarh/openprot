@@ -11,7 +11,7 @@
 //! and instead drives `caliptra-image-gen` directly with the static
 //! `VENDOR_CONFIG_KEY_0` + `OWNER_CONFIG` constants from
 //! `caliptra-image-fake-keys`, which is what produces the known-good
-//! `vendor_pk_hash` that the repo's `caliptra_runner.bzl` hard-codes.
+//! `vendor_pk_hash` that the repo's `caliptra_test.bzl` hard-codes.
 //!
 //! Usage:
 //!   caliptra_firmware_bundler --fmc <fmc.elf> --runtime <runtime.elf>

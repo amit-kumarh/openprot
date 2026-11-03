@@ -116,7 +116,7 @@ The veer target builds on Pigweed's microkernel and runtime crates:
 
 For a concrete cross-process example, see
 [`design/pw-kernel-ipc.md`](./design/pw-kernel-ipc.md) and
-[`target/veer/ipc/`](https://github.com/OpenPRoT/openprot/tree/main/target/veer/ipc).
+[`target/veer/tests/ipc/`](https://github.com/OpenPRoT/openprot/tree/main/target/veer/tests/ipc).
 
 ## Targets
 
@@ -132,7 +132,7 @@ test/runner tooling.
   Verilator-driven tests are gated behind the `verilator` tag and the
   corresponding workflow group (see `workflows.json`).
 - `target/veer/` — Caliptra VeeR-EL2. Built on `pw_kernel` and exercised
-  on the Caliptra emulator via `target/veer/tooling/caliptra_runner.bzl`.
+  on the Caliptra emulator via `target/veer/tooling/caliptra_test.bzl`.
 
 When adding a new target, prefer the `target/<name>/defs.bzl` helpers over
 hand-rolled `rust_binary` rules, and always set `target_compatible_with =

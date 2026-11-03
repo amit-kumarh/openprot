@@ -6,7 +6,7 @@
 
 load("@pigweed//pw_kernel/tooling:system_image.bzl", "system_image")
 load("//target:unittest_image.bzl", "unittest_image")
-load("//target/veer/tooling:caliptra_runner.bzl", "caliptra_mcu_image")
+load("//target/veer/tooling:caliptra_test.bzl", "caliptra_mcu_image")
 
 TARGET_COMPATIBLE_WITH = select({
     "//target/veer:target_veer": [],

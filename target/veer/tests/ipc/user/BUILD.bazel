@@ -6,7 +6,7 @@ load("@pigweed//pw_kernel/tooling:target_linker_script.bzl", "target_linker_scri
 load("@pigweed//pw_kernel/tooling/panic_detector:rust_binary_no_panics_test.bzl", "rust_binary_no_panics_test")
 load("@rules_rust//rust:defs.bzl", "rust_binary")
 load("//target/veer:defs.bzl", "TARGET_COMPATIBLE_WITH", "veer_system_config", "veer_system_image")
-load("//target/veer/tooling:caliptra_runner.bzl", "caliptra_on_device_test")
+load("//target/veer/tooling:caliptra_test.bzl", "caliptra_on_device_test")
 
 package(default_visibility = ["//visibility:public"])
 

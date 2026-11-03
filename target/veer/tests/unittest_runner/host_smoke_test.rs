@@ -3,7 +3,7 @@
 
 //! Host-driven test exercising `caliptra_mcu_hw_model` (`ModelEmulated`
 //! on x86_64, `ModelFpgaRealtime` on VCK190 aarch64) against the shared
-//! `//target/veer/unittest_runner` MCU firmware image.
+//! `//target/veer/tests/unittest_runner` MCU firmware image.
 
 use caliptra_mcu_hw_model::{McuHwModel, McuManager};
 use test_boot_files::BootFiles;
